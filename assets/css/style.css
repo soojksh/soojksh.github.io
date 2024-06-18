@@ -320,6 +320,18 @@ nav{
     font-size: 20px;
 }
 
+/* Styles for larger screens */
+.scroll-icon-box {
+    display: block;
+  }
+  
+  /* Styles for smaller screens */
+  @media (max-width: 900px) {
+    .scroll-icon-box {
+      display: none;
+    }
+  }
+
 /* ----- MAIN BOX ----- */
 .section{
     padding-block: 5em;
