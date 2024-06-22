@@ -169,6 +169,12 @@ nav{
     padding-inline: 15px;
     margin-inline: 20px;
 }
+
+@media (max-width: 767px) {
+    body.dark-mode .nav-link {
+        color: var(--body-color-dark); /* Change the color to black in dark mode for mobile devices */
+    }
+}
 .nav-menu-btn{
     display: none;
     order: 2;
@@ -595,7 +601,7 @@ footer{
     right: 20px;
     width: 40px;
     height: 40px;
-    background-color: var(--first-color);
+    background-color: var(--text-color-third);
     color: var(--color-white);
     display: flex;
     justify-content: center;
@@ -606,6 +612,7 @@ footer{
     visibility: hidden;
     transition: opacity 0.3s, visibility 0.3s;
     z-index: 999;
+    color: #fff;
 }
 
 .scroll-top.visible {
@@ -1414,3 +1421,79 @@ footer{
   .resume-btn {
     text-decoration: none;
   }
+
+  body.dark-mode .story-card__content {
+    background-color: rgb(25, 25, 25);
+    color: #ffffff;
+}
+
+body.dark-mode .story-card__title {
+    color: #ffffff;
+}
+
+body.dark-mode .story-card__category {
+    color: #cccccc;
+}
+
+/* Modal styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--text-color-third);
+    color: #fff;
+    position: relative;
+    border-radius: 10px;
+  }
+  
+  .thank-you-text {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .modal-body {
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  .close-button {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: auto;  }
+  
+  .close-button:hover,
+  .close-button:focus {
+    color: #aaa;
+    text-decoration: none;
+  }
+  
+  
